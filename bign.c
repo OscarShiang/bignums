@@ -28,7 +28,7 @@ void bn_free(bn *a)
         FREE(a->data);
 }
 
-static uint32_t max(uint32_t a, uint32_t b)
+static inline uint32_t max(uint32_t a, uint32_t b)
 {
     return (a > b) ? a : b;
 }
